@@ -15,6 +15,17 @@ img {
   height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-nav {
   width: 320px;
   margin: 0 auto;
@@ -95,5 +106,49 @@ img {
 
 .page-header__logo {
   background: rgba(255, 255, 255, 0.5);
+}
+
+.stats {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.stats__header {
+  padding-top: 30px;
+  padding-right: 40px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+}
+
+.stats__list {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .stats {
+    width: 640px;
+    margin-top: -185px;
+  }
+  .stats__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 960px;
+    margin-top: -160px;
+  }
+  .stats__header {
+    width: 240px;
+  }
+  .stats__list {
+    width: 640px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
